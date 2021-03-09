@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="To do QA CART Moibile Application">
+    <listeners>
+        <listener class-name="com.myapp.listeners.QaTestListener"></listener>
+    </listeners>
+    <test thread-count="5" name="Android" >
+        <parameter name="devicename" value="AminePhone"></parameter>
+        <parameter name="platformname" value="Android"></parameter>
+        <parameter name="platformversion" value="11"></parameter>
+
+         <classes>
+
+            <class name="com.myapp.testcases.LoginScreenTest"/>
+
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Ios" >
+
+
+        <classes>
+
+        </classes>
+    </test>
+</suite>
